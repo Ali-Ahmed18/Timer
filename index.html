@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="stopWatchWraper">
+            <h1 class="stopWatchText">Timer</h1>
+            <div class="stopWatch">
+                <div class="circle">
+                    <input type="text" onchange="getValue()" id="min" value="00">
+                    <span>:</span>
+                    <input type="text" onchange="getValue()" id="sec" value="00">
+                    <span>:</span>
+                    <input type="text" id="mSec" value="00" disabled>
+                </div>
+
+            </div>
+            <div class="btns">
+                <button onclick="start(this)"><i class="fa-solid fa-play"></i></button>
+                <button onclick="reset(this)"><i class="fa-solid fa-arrows-rotate"></i></button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
